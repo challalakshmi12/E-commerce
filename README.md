@@ -1,77 +1,83 @@
-# E-commerce Website
+# 🛍️ E-commerce Website
 
-This is a simple e-commerce website built using **PHP**, **MySQL**, and **HTML/CSS**. It includes features like:
-
-- User registration and login
-- Product listing
-- Cart system
-- Admin panel for managing products
-
-## 👤 Author
-
-**Challa Lakshmi**  
-GitHub: [challalakshmi12](https://github.com/challalakshmi12)
+A beginner-friendly PHP-MySQL E-commerce website created as a practice project. It supports both user and admin functionalities like product browsing, cart, login/register, and product management.
 
 ---
 
-## 🔧 Technologies Used
+## 👩‍💻 Developed By
 
-- PHP
-- MySQL (via phpMyAdmin)
-- HTML5 / CSS3
-- XAMPP (for local server setup)
-- Git & GitHub
+**Challa Lakshmi**
 
-## 📁 Project Structure
+---
 
-<pre> ``` ecommerce_website/ ├── admin/ │ ├── add_product.php │ ├── dashboard.php │ ├── login.php │ ├── logout.php │ └── manage_products.php ├── css/ │ └── style.css ├── images/ │ └── product images, cart icon, etc. ├── includes/ │ └── db.php ├── pages/ │ ├── login.php │ ├── logout.php │ ├── register.php │ └── cart.php ├── index.php └── README.md ``` </pre>
+## 🚀 Features
 
-## 🚀 How to Run
+- 🔐 User registration and login
+- 🛒 Add to cart and view cart
+- 📦 Product listing with image, description, and price
+- 🧑‍💼 Admin panel: add, edit, and delete products
+- 🔓 User and admin logout functionality
 
-1. Clone this repository or download the ZIP file.
-2. Move it to your `htdocs` folder inside XAMPP.
-3. Start **Apache** and **MySQL** in the XAMPP control panel.
-4. Import the database using `phpMyAdmin`.
-5. Visit `http://localhost/ecommerce_website` in your browser.
+---
 
-## 🗃️ Database Setup
+## 📁 Project Folder Structure
 
-Import this table into your MySQL database:
-sql
+```plaintext
+ecommerce_website/
+├── admin/
+│   ├── add_product.php
+│   ├── dashboard.php
+│   ├── login.php
+│   ├── logout.php
+│   └── manage_products.php
+├── css/
+│   └── style.css
+├── images/
+│   └── product1.png, product2.png, ..., product5.png, cart.png
+├── includes/
+│   └── db.php
+├── pages/
+│   ├── login.php
+│   ├── logout.php
+│   ├── register.php
+│   └── cart.php
+├── index.php
+├── README.md
+└── license
+```
 
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  username VARCHAR(100),
-  email VARCHAR(100),
-  password VARCHAR(255),
-  role VARCHAR(50),
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+---
 
-CREATE TABLE products (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255),
-  price DECIMAL(10,2),
-  description TEXT,
-  image VARCHAR(255)
-);
-To add an admin manually:
+## ⚙️ How to Run Locally
 
-INSERT INTO users (username, email, password, role, created_at)
-VALUES ('Super Admin', 'admin@ecommerce.com', '$2y$10$abcdefghijk1234567890LMNOPQRSTUVWXyz12345678', 'admin', NOW());
-(Use password_hash() in PHP to generate secure password hashes.)
+1. Download and install [XAMPP](https://www.apachefriends.org/)
+2. Start Apache and MySQL via XAMPP control panel
+3. Create a database in phpMyAdmin (e.g., `ecommerce`)
+4. Import the SQL file or manually create the required tables
+5. Place the project folder in `C:/xampp/htdocs/`
+6. Open browser and visit:  
+   `http://localhost/ecommerce_website/index.php`
 
+---
 
-💡 Features
-Public product listing
+## 🔑 Sample Admin Login
 
-Secure login/register
+- **Email:** `admin@ecommerce.com`
+- **Password:** (your inserted password)
 
-Admin dashboard to add/manage products
+---
 
-Image upload for products
+## 📝 License
 
-Session-based cart
-This project is licensed under the MIT License.  
-You are free to use, modify, and distribute this code.
+This project is licensed under the **MIT License** — see the [license](license) file for details.
+
+You are free to use, modify, and distribute this project with proper credit.
+
+---
+
+## 🌟 Support
+
+If you find this helpful, feel free to ⭐ the repository on GitHub!
+
+---
 
