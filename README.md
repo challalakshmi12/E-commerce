@@ -1,4 +1,3 @@
-# E-commerce
 # E-commerce Website
 
 This is a simple e-commerce website built using **PHP**, **MySQL**, and **HTML/CSS**. It includes features like:
@@ -25,29 +24,7 @@ GitHub: [challalakshmi12](https://github.com/challalakshmi12)
 
 ## 📁 Project Structure
 
-ecommerce_website/
-├── admin/
-│ ├── add_product.php
-│ ├── dashboard.php
-│ ├── login.php
-│ ├── logout.php
-│ └── manage_products.php
-├── css/
-│ └── style.css
-├── images/
-│ └── product images, cart icon, etc.
-├── includes/
-│ └── db.php
-├── pages/
-│ ├── login.php
-│ ├── logout.php
-│ ├── register.php
-│ └── cart.php
-├── index.php
-└── README.md
-
-sql
-Copy code
+<pre> ``` ecommerce_website/ ├── admin/ │ ├── add_product.php │ ├── dashboard.php │ ├── login.php │ ├── logout.php │ └── manage_products.php ├── css/ │ └── style.css ├── images/ │ └── product images, cart icon, etc. ├── includes/ │ └── db.php ├── pages/ │ ├── login.php │ ├── logout.php │ ├── register.php │ └── cart.php ├── index.php └── README.md ``` </pre>
 
 ## 🚀 How to Run
 
@@ -60,8 +37,8 @@ Copy code
 ## 🗃️ Database Setup
 
 Import this table into your MySQL database:
+sql
 
-```sql
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(100),
@@ -80,11 +57,10 @@ CREATE TABLE products (
 );
 To add an admin manually:
 
-sql
-Copy code
 INSERT INTO users (username, email, password, role, created_at)
 VALUES ('Super Admin', 'admin@ecommerce.com', '$2y$10$abcdefghijk1234567890LMNOPQRSTUVWXyz12345678', 'admin', NOW());
 (Use password_hash() in PHP to generate secure password hashes.)
+
 
 💡 Features
 Public product listing
@@ -96,6 +72,6 @@ Admin dashboard to add/manage products
 Image upload for products
 
 Session-based cart
+This project is licensed under the MIT License.  
+You are free to use, modify, and distribute this code.
 
-📜 License
-This is a basic project for learning purposes and is not licensed under any open-source license.
